@@ -1,0 +1,117 @@
+version: '3.1'
+intents:
+- affirm
+- angry
+- ask_career_guidance
+- ask_resources
+- ask_stress
+- ask_study_tips
+- ask_time_management
+- bot_challenge
+- deny
+- family_pressure
+- goodbye
+- greet
+- mixed_feelings
+- mood_happy
+- mood_unhappy
+- peer_pressure
+- relationships
+- suicidal
+responses:
+  utter_iamabot:
+  - text: I am a bot, here to help you!
+  - text: Yes, I’m an AI chatbot created to support you.
+  utter_greet:
+  - text: Hello! How are you feeling today?
+  - text: Hi there! How’s your day going?
+  - text: Hey! Tell me how you’re doing.
+  utter_cheer_up:
+  - text: That’s okay! Everything will work out, don’t worry!
+  - text: It sounds tough, but I believe in you. You’ll get through this.
+  - text: Sometimes things feel overwhelming, but it won’t last forever.
+  utter_happy:
+  - text: That’s wonderful to hear! Keep it up!
+  - text: I’m glad you’re happy! That’s awesome 🎉
+  - text: Yay, that’s so good to know! Keep smiling. 😊
+  utter_goodbye:
+  - text: Goodbye! Take care.
+  - text: See you later, and remember you’re doing great.
+  - text: Bye! I’m always here if you need me again.
+  utter_did_that_help:
+  - text: Did that help?
+  - text: Was that useful for you?
+  - text: Do you feel a little better now?
+  utter_study_tips:
+  - text: Here are some study tips – break sessions into 25-minute chunks (Pomodoro), take notes, and test yourself often.
+  - text: Try studying in small bursts, stay consistent, and review regularly.
+  - text: Make a timetable, highlight key points, and quiz yourself to remember better.
+  utter_time_management:
+  - text: Try making a daily schedule, set small goals, and avoid multitasking. Tools like Trello or Notion can help.
+  - text: Break tasks into smaller steps and prioritize them. Avoid procrastination with reminders.
+  - text: Time blocking can be powerful—assign specific hours to study, rest, and hobbies.
+  utter_stress:
+  - text: It’s normal to feel stressed. Take deep breaths, exercise, or talk to a friend. Remember, exams don’t define your worth.
+  - text: Stress can feel heavy, but try meditation, music, or journaling to calm your mind.
+  - text: When you’re stressed, even short breaks and mindful breathing can help.
+  utter_angry:
+  - text: I understand that you are angry. It’s okay to feel this way. Want me to share some tips to calm down?
+  - text: Anger happens to everyone. Sometimes venting or journaling helps. Would you like strategies?
+  - text: I hear your frustration. Do you want me to share calming techniques?
+  utter_career_guidance:
+  - text: Career depends on your interests! Explore internships, online projects, or talk to seniors. Want me to suggest resources?
+  - text: Think about what excites you most—coding, teaching, designing? I can share career paths for each.
+  - text: You don’t have to decide everything now. Exploring and experimenting is a great start.
+  utter_resources:
+  - text: Check out Coursera, edX, and freeCodeCamp. For coding, W3Schools & GeeksforGeeks are great!
+  - text: Try platforms like Khan Academy, NPTEL, or YouTube learning channels.
+  - text: There are many free resources—would you like me to suggest some by subject?
+  utter_relationshipadvice:
+  - text: Relationships can be complicated. Try open communication and set healthy boundaries.
+  - text: It’s okay to feel confused about relationships. Do you want tips on self-care in relationships?
+  - text: Healthy relationships need trust and respect. Would you like me to share resources?
+  utter_familypressure:
+  - text: It sounds like you’re feeling a lot of pressure from your family. Remember, your worth isn’t just marks or expectations.
+  - text: Family expectations can feel overwhelming. Want tips on talking with them calmly?
+  - text: You’re not alone. Many students face family pressure—would you like me to suggest coping strategies?
+  utter_peerpressure:
+  - text: Peer pressure is tough, but you have the right to say no. True friends will respect your choices.
+  - text: Don’t feel forced to do something you’re not comfortable with. Want me to share tips to handle this?
+  - text: Peer pressure is common, but your values and well-being come first.
+  utter_suicidal:
+  - text: I hear that you’re feeling like life is too much right now. Please reach out immediately to a trusted friend, family member, or counselor. If you’re in danger of harming yourself, call your local emergency number. In India, call AASRA at +91-98204 66726.
+  - text: You’re not alone. Your feelings are important. Please reach out for immediate help. In India, call AASRA at +91-98204 66726.
+  - text: I want you to stay safe. Please call your local emergency helpline or talk to someone you trust right now.
+  utter_mixed_feelings:
+  - text: It sounds like you’re experiencing both positive and difficult emotions at the same time. That’s completely normal.
+  - text: I hear that you’re proud or happy about one part, but also feeling stressed or worried. Want to talk more about the tough part?
+  - text: Mixed feelings are part of being human. It’s okay to feel both good and bad at the same time.
+  - text: It shows you’re reflecting deeply on your experiences. That’s a strength.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+- utter_resources
+- utter_angry
+- utter_did_that_help
+- utter_career_guidance
+- utter_familypressure
+- utter_happy
+- utter_cheer_up
+- utter_relationshipadvice
+- utter_mixed_feelings
+- utter_stress
+- utter_iamabot
+- utter_greet
+- utter_goodbye
+- utter_study_tips
+- utter_time_management
+- utter_peerpressure
+- utter_suicidal
+entities:
+- feeling
+- coding
+- someone
+- you
+- thanks
+- now

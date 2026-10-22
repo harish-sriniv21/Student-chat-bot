@@ -1,0 +1,20 @@
+# Python virtual environment
+venv/
+venv39/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Logs and databases
+*.db
+*.log
+
+# Rasa-specific files
+models/
+results/
+events.out.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db
